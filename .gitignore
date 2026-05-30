@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.env
+.DS_Store
+*.log
+
+backend/data/events.log
+backend/data/chatbox.sqlite
+loja/node_modules/
+loja/dist/

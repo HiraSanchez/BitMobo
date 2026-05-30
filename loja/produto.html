@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b0f14">
+  <link rel="icon" type="image/png" href="/brand/bitmobo-mark.png">
+  <title>Produto — BitMobo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="site-header"></div>
+  <main class="container page">
+    <nav class="breadcrumb" id="breadcrumb"></nav>
+    <div id="product-root"></div>
+    <div id="product-error" class="empty" hidden>
+      <p>Produto nao encontrado.</p>
+      <a class="btn btn--primary" href="/produtos.html">Voltar ao catalogo</a>
+    </div>
+  </main>
+  <div id="site-footer"></div>
+  <div id="toast" class="toast" hidden role="status"></div>
+  <script type="module" src="/src/js/pages/produto.js"></script>
+</body>
+</html>

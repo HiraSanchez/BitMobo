@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b0f14">
+  <link rel="icon" type="image/png" href="/brand/bitmobo-mark.png">
+  <title>Checkout — BitMobo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="site-header"></div>
+  <main class="container page">
+    <h1 class="page-title">Finalizar pedido</h1>
+    <div class="checkout-steps">
+      <span class="step is-active">1. Identificacao</span>
+      <span class="step is-active">2. Entrega</span>
+      <span class="step is-active">3. Pagamento</span>
+    </div>
+    <div class="split-layout">
+      <form class="panel" id="checkout-form">
+        <h2 style="margin:0 0 16px;font-size:1.1rem">Dados do pedido</h2>
+        <div class="field">
+          <label for="name">Nome completo</label>
+          <input id="name" name="name" required autocomplete="name" placeholder="Como consta no documento">
+        </div>
+        <div class="field">
+          <label for="email">E-mail</label>
+          <input id="email" name="email" type="email" required autocomplete="email" placeholder="voce@email.com">
+        </div>
+        <div class="field">
+          <label for="phone">WhatsApp</label>
+          <input id="phone" name="phone" required placeholder="(11) 99999-9999">
+        </div>
+        <div class="field">
+          <label for="cep">CEP</label>
+          <input id="cep" name="cep" required placeholder="00000-000">
+        </div>
+        <div class="field">
+          <label for="address">Endereco completo</label>
+          <input id="address" name="address" required placeholder="Rua, numero, bairro, cidade - UF">
+        </div>
+        <div class="field">
+          <label for="payment">Forma de pagamento</label>
+          <select id="payment" name="payment">
+            <option>Pix (5% de desconto simulado)</option>
+            <option>Cartao de credito</option>
+            <option>Boleto bancario</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn--primary btn--block btn--lg">Confirmar pedido</button>
+        <p class="form-hint">Demonstracao visual — a confirmacao real pode ser feita pelo assistente apos integracao.</p>
+        <div id="checkout-warn" class="alert alert--warn" hidden style="margin-top:14px">
+          Defina <code>CHATBOT_URL</code> no Render para concluir via assistente.
+        </div>
+      </form>
+      <aside class="panel">
+        <h2 style="margin:0 0 14px;font-size:1.1rem">Seu pedido</h2>
+        <div id="order-summary"></div>
+      </aside>
+    </div>
+    <div id="checkout-success" class="content-card" hidden style="margin-top:20px">
+    </div>
+  </main>
+  <div id="site-footer"></div>
+  <script type="module" src="/src/js/pages/checkout.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#075e54">
+  <title>Chatbox WhatsApp</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <main class="app-shell">
+    <section class="support-intro" aria-label="Resumo do atendimento">
+      <div class="support-brand">
+        <div class="brand-mark brand-mark--large" aria-hidden="true">BM</div>
+        <div>
+          <span>Central de atendimento</span>
+          <h1 id="store-name">BitMobo</h1>
+          <p id="store-subtitle">Suporte inteligente para pedidos, produtos e pos-venda.</p>
+        </div>
+      </div>
+      <div class="support-kpis" aria-label="Indicadores do suporte">
+        <div>
+          <span>Resposta inicial</span>
+          <strong>Imediata</strong>
+        </div>
+        <div>
+          <span>Canal</span>
+          <strong>Online</strong>
+        </div>
+        <div>
+          <span>Handoff</span>
+          <strong>Com protocolo</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="chat-panel" aria-label="Simulador de chat">
+      <header class="chat-header">
+        <div class="brand-mark" aria-hidden="true">BM</div>
+        <div>
+          <h2 id="assistant-title">Assistente BitMobo</h2>
+          <p id="assistant-presence">Online agora · atendimento guiado</p>
+        </div>
+        <span class="live-pill">Ativo</span>
+      </header>
+
+      <div id="messages" class="messages" role="log" aria-live="polite" aria-relevant="additions"></div>
+
+      <div id="quick-actions" class="quick-actions" aria-label="Ações rápidas"></div>
+
+      <form id="chat-form" class="composer" aria-label="Enviar mensagem">
+        <label class="file-button" for="attachment-input">Anexar</label>
+        <input id="attachment-input" type="file" accept="image/*,.pdf" aria-label="Anexar comprovante">
+        <input id="message-input" type="text" autocomplete="off" placeholder="Digite sua mensagem" aria-label="Mensagem">
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <aside class="status-panel" aria-label="Status do atendimento">
+      <h2>Contexto</h2>
+      <div class="assistant-card">
+        <span>Assistente</span>
+        <strong id="assistant-name">Carregando</strong>
+        <p id="business-hours">Consultando horario de atendimento...</p>
+      </div>
+      <dl>
+        <div>
+          <dt>Intenção</dt>
+          <dd id="intent">menu</dd>
+        </div>
+        <div>
+          <dt>Destino</dt>
+          <dd id="destination">Bot</dd>
+        </div>
+        <div>
+          <dt>Chat</dt>
+          <dd id="closed">Aberto</dd>
+        </div>
+        <div>
+          <dt>Etapa</dt>
+          <dd id="step">MENU</dd>
+        </div>
+        <div>
+          <dt>Proxima acao</dt>
+          <dd id="next-action">Escolha uma opcao ou digite sua mensagem</dd>
+        </div>
+      </dl>
+      <div class="context-stack" aria-label="Resumo operacional">
+        <div>
+          <span>Protocolo</span>
+          <strong id="active-protocol">Ainda nao gerado</strong>
+        </div>
+        <div>
+          <span>Canal humano</span>
+          <strong id="human-channel">Disponivel por solicitacao</strong>
+        </div>
+        <div>
+          <span>Seguranca</span>
+          <strong>Nao envie senhas ou dados completos do cartao</strong>
+        </div>
+      </div>
+      <a class="admin-link" href="/admin.html">Abrir painel do atendente</a>
+    </aside>
+  </main>
+
+  <div id="app-toast" class="toast-region" aria-live="polite"></div>
+  <script src="/app.js"></script>
+</body>
+</html>

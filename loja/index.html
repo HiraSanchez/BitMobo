@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BitMobo - placas-mae, processadores, memoria RAM, placas de video, SSDs e perifericos para PC desktop.">
+  <meta name="theme-color" content="#0b0f14">
+  <title>BitMobo - Componentes para PC Desktop</title>
+  <link rel="icon" type="image/png" href="/brand/bitmobo-mark.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <section class="hero">
+    <div class="container hero__grid">
+      <div class="hero__content">
+        <div class="hero__tags" id="hero-tags"></div>
+        <h1 id="hero-title">Carregando...</h1>
+        <p class="hero__lead">Especialistas em hardware para gamers, criadores de conteudo e estacoes de trabalho, com curadoria de compatibilidade AM4, AM5 e Intel.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary btn--lg" href="/produtos.html">Ver catalogo</a>
+          <a class="btn btn--hero btn--lg" href="/produtos.html?categoria=ofertas">Combos BitMobo</a>
+        </div>
+      </div>
+
+      <div class="hero__visual" aria-label="Produtos em destaque BitMobo">
+        <div class="hero__product-stack">
+          <img class="hero__product hero__product--combo" src="/produtos/Combo Upgrade AM4 Ryzen 5 5600 + B550M + 16GB DDR4.png" alt="Combo Upgrade AM4 com Ryzen 5, placa-mae B550M e memoria DDR4">
+        </div>
+        <div class="hero__deal">
+          <span>Combo da semana</span>
+          <strong id="hero-deal-price">--</strong>
+          <p id="hero-deal-name">Montagem guiada + suporte tecnico</p>
+          <a class="btn btn--primary" href="/produto.html?id=KIT-AM4">Ver combo AM4</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main class="container page">
+    <div class="trust-grid">
+      <div class="trust-card"><strong>Envio nacional</strong><span>Correios e transportadoras parceiras</span></div>
+      <div class="trust-card"><strong>NF-e garantida</strong><span>Nota fiscal em todos os pedidos</span></div>
+      <div class="trust-card"><strong>Compatibilidade</strong><span>Assistente valida soquete, DDR e TDP</span></div>
+      <div class="trust-card"><strong>12x sem juros*</strong><span>Simulacao visual no checkout</span></div>
+    </div>
+
+    <section class="section-title">
+      <h2>Departamentos</h2>
+      <a href="/produtos.html">Ver tudo</a>
+    </section>
+    <div id="category-grid" class="category-grid"></div>
+
+    <section class="section-title section-title--spaced">
+      <h2>Destaques da semana</h2>
+      <a href="/produtos.html">Mais produtos</a>
+    </section>
+    <div id="featured-grid" class="product-grid"></div>
+  </main>
+
+  <div id="site-footer"></div>
+  <div id="toast" class="toast" hidden role="status"></div>
+  <script type="module" src="/src/js/pages/home.js"></script>
+</body>
+</html>

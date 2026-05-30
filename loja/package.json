@@ -1,0 +1,22 @@
+{
+  "name": "bitmobo-loja",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Loja de componentes para PC desktop — BitMobo",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "start": "node server.js",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "vite": "^6.2.0"
+  }
+}

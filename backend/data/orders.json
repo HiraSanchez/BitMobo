@@ -1,0 +1,22 @@
+{
+  "orders": [
+    {
+      "number": "1001",
+      "customer": "Cliente Teste",
+      "status": "Separando pedido",
+      "tracking": "Aguardando coleta da transportadora"
+    },
+    {
+      "number": "1002",
+      "customer": "Cliente Teste",
+      "status": "Enviado",
+      "tracking": "Saiu para entrega"
+    },
+    {
+      "number": "1003",
+      "customer": "Cliente Teste",
+      "status": "Entregue",
+      "tracking": "Pedido entregue em 03/05/2026"
+    }
+  ]
+}

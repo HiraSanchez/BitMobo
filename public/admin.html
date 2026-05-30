@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#075e54">
+  <title>Painel de Atendente</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <main class="admin-shell">
+    <header class="admin-header">
+      <div>
+        <h1>Painel de Atendente</h1>
+        <p>Fila de chamados, conversas, avaliações e histórico completo — atualização automática a cada poucos segundos.</p>
+      </div>
+      <div class="admin-actions">
+        <a href="/api/export/tickets.csv" id="export-csv">Exportar CSV</a>
+        <a href="/">Voltar ao chat</a>
+      </div>
+    </header>
+
+    <div class="admin-meta-bar" aria-live="polite">
+      <div id="storage-pill" class="storage-pill" hidden>
+        <span>Armazenamento</span>
+        <strong id="storage-mode">—</strong>
+      </div>
+    </div>
+
+    <section class="metric-grid" aria-label="Resumo do atendimento">
+      <article class="metric-card">
+        <span>Abertos</span>
+        <strong id="metric-open">0</strong>
+      </article>
+      <article class="metric-card">
+        <span>Encaminhados</span>
+        <strong id="metric-handoff">0</strong>
+      </article>
+      <article class="metric-card">
+        <span>Resolvidos</span>
+        <strong id="metric-resolved">0</strong>
+      </article>
+      <article class="metric-card">
+        <span>Nota média</span>
+        <strong id="metric-rating">0</strong>
+      </article>
+    </section>
+
+    <section class="admin-toolbar" aria-label="Filtros do painel">
+      <input id="admin-search" type="search" placeholder="Buscar por protocolo, cliente, pedido ou telefone" autocomplete="off">
+      <select id="status-filter" aria-label="Filtrar por status">
+        <option value="todos">Todos os status</option>
+        <option value="aberta">Abertos</option>
+        <option value="em atendimento">Em atendimento</option>
+        <option value="resolvida">Resolvidos</option>
+      </select>
+    </section>
+
+    <section class="admin-grid">
+      <article class="admin-card wide">
+        <h2>Chamados</h2>
+        <div id="tickets" class="admin-list"></div>
+      </article>
+
+      <article class="admin-card">
+        <h2>Conversas</h2>
+        <div id="conversations" class="admin-list"></div>
+      </article>
+
+      <article class="admin-card">
+        <h2>Avaliações</h2>
+        <div id="ratings" class="admin-list"></div>
+      </article>
+
+      <article class="admin-card wide">
+        <h2>Histórico selecionado</h2>
+        <div id="history" class="history-list empty-state" role="region" aria-label="Mensagens da conversa"><p class="empty">Selecione uma conversa para ver o histórico.</p></div>
+        <form id="reply-form" class="reply-form" hidden>
+          <input id="reply-user-id" type="hidden">
+          <input id="reply-attendant" type="text" placeholder="Nome do atendente" value="Atendente" autocomplete="name">
+          <input id="reply-message" type="text" placeholder="Responder ao cliente" autocomplete="off">
+          <button type="submit">Enviar resposta</button>
+        </form>
+      </article>
+    </section>
+  </main>
+
+  <div id="admin-toast" class="toast-region" aria-live="polite"></div>
+  <script src="/admin.js"></script>
+</body>
+</html>

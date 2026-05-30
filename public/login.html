@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#075e54">
+  <title>Login do Painel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <main class="login-shell">
+    <form id="login-form" class="login-card">
+      <h1>Painel de Atendente</h1>
+      <p class="login-lead">Acesse com as credenciais configuradas no servidor.</p>
+      <label>
+        Usuário
+        <input id="login-user" type="text" autocomplete="username" placeholder="admin" required>
+      </label>
+      <label>
+        Senha
+        <input id="login-password" type="password" autocomplete="current-password" placeholder="••••" required>
+      </label>
+      <button type="submit">Entrar</button>
+      <p id="login-error" class="form-error" role="alert"></p>
+    </form>
+  </main>
+  <div id="login-toast" class="toast-region" aria-live="polite"></div>
+  <script src="/login.js"></script>
+</body>
+</html>

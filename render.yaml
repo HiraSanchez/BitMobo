@@ -1,0 +1,44 @@
+services:
+  - type: web
+    name: bitmobo-chatbot
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /
+    envVars:
+      - key: NODE_VERSION
+        value: "20"
+      - key: STORE_NAME
+        value: BitMobo
+      - key: STORE_ASSISTANT_NAME
+        value: Assistente BitMobo
+      - key: STORE_SUPPORT_EMAIL
+        value: suporte@bitmobo.com.br
+      - key: STORE_BUSINESS_HOURS
+        value: Segunda a sexta, das 08h as 18h
+      - key: VERIFY_TOKEN
+        generateValue: true
+      - key: ADMIN_USER
+        value: admin
+      - key: ADMIN_PASSWORD
+        generateValue: true
+      - key: ADMIN_SESSION
+        generateValue: true
+  - type: web
+    name: bitmobo-loja
+    runtime: node
+    plan: free
+    rootDir: loja
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_VERSION
+        value: "20"
+      - key: CHATBOT_URL
+        sync: false
+      - key: STORE_NAME
+        value: BitMobo
+      - key: STORE_TAGLINE
+        value: Hardware para desktops gamer, criadores e estacoes de trabalho

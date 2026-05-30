@@ -1,0 +1,357 @@
+{
+  "store": {
+    "name": "BitMobo",
+    "tagline": "Componentes para desktop gamer, criadores e estacoes de trabalho",
+    "currency": "BRL",
+    "warrantyDefault": "12 meses de garantia contra defeitos de fabricacao",
+    "shippingNote": "Envio para todo o Brasil via transportadoras parceiras"
+  },
+  "categories": [
+    {
+      "id": "placas-mae",
+      "name": "Placas-mae",
+      "icon": "motherboard",
+      "description": "B550, B650, B760 e X670 para AMD e Intel",
+      "products": [
+        {
+          "id": "MB-ASUS-B550",
+          "name": "ASUS TUF GAMING B550M-PLUS Wi-Fi II",
+          "image": "/produtos/ASUS TUF GAMING B550M-PLUS Wi-Fi II.png",
+          "brand": "ASUS",
+          "price": 899.9,
+          "oldPrice": 1049.9,
+          "stock": 14,
+          "rating": 4.8,
+          "reviews": 126,
+          "badge": "Escolha BitMobo",
+          "description": "Placa-mae micro-ATX AM4 com Wi-Fi 6, PCIe 4.0 e VRM reforcado para Ryzen 5 e 7. Ideal para builds compactos com excelente custo-beneficio.",
+          "specs": ["Soquete AM4", "Chipset AMD B550", "DDR4 ate 5100 MHz OC", "2x M.2 PCIe 4.0", "Wi-Fi 6 + Bluetooth 5.2", "HBMI 2.1 / DisplayPort 1.2"]
+        },
+        {
+          "id": "MB-MSI-B760",
+          "name": "MSI PRO B760M-A Wi-Fi DDR4",
+          "image": "/produtos/MSI PRO B760M-A Wi-Fi DDR4.jpeg",
+          "brand": "MSI",
+          "price": 979.9,
+          "stock": 11,
+          "rating": 4.7,
+          "reviews": 89,
+          "description": "Plataforma Intel 13a/14a geracao com DDR4, perfeita para upgrade sem trocar memoria.",
+          "specs": ["LGA 1700", "Intel B760", "DDR4 dual channel", "PCIe 4.0 x16", "Wi-Fi 6E", "Realtek 2.5G LAN"]
+        },
+        {
+          "id": "MB-GB-X670",
+          "name": "Gigabyte X670 AORUS Elite AX",
+          "image": "/produtos/Gigabyte X670 AORUS Elite AX.png",
+          "brand": "Gigabyte",
+          "price": 2299.9,
+          "stock": 6,
+          "rating": 4.9,
+          "reviews": 41,
+          "badge": "Alta performance",
+          "description": "Placa topo de linha AM5 com PCIe 5.0, USB4 e VRM de 16 fases para Ryzen 9 e workstations.",
+          "specs": ["Soquete AM5", "AMD X670", "DDR5", "PCIe 5.0 GPU + M.2", "Wi-Fi 6E", "Q-Flash Plus"]
+        }
+      ]
+    },
+    {
+      "id": "processadores",
+      "name": "Processadores",
+      "icon": "cpu",
+      "description": "CPUs AMD Ryzen e Intel Core para jogos e produtividade",
+      "products": [
+        {
+          "id": "CPU-R5-5600",
+          "name": "AMD Ryzen 5 5600 6-Core 12-Thread",
+          "image": "/produtos/AMD Ryzen 5 5600 6-Core 12-Thread.png",
+          "brand": "AMD",
+          "price": 729.9,
+          "stock": 28,
+          "rating": 4.9,
+          "reviews": 312,
+          "badge": "Mais vendido",
+          "description": "O queridinho do AM4: 6 nucleos Zen 3 com excelente desempenho em jogos e aplicativos do dia a dia.",
+          "specs": ["6 nucleos / 12 threads", "Boost ate 4.4 GHz", "TDP 65W", "Soquete AM4", "Sem cooler incluso"]
+        },
+        {
+          "id": "CPU-I5-13400F",
+          "name": "Intel Core i5-13400F 10-Core",
+          "image": "/produtos/Intel Core i5-13400F 10-Core.webp",
+          "brand": "Intel",
+          "price": 1149.9,
+          "stock": 19,
+          "rating": 4.7,
+          "reviews": 178,
+          "description": "CPU hibrida com nucleos P+E para multitarefa, streaming e jogos em 1080p/1440p.",
+          "specs": ["10 nucleos (6P+4E)", "Boost 4.6 GHz", "LGA 1700", "Sem GPU integrada", "DDR4/DDR5"]
+        },
+        {
+          "id": "CPU-R7-7800X3D",
+          "name": "AMD Ryzen 7 7800X3D",
+          "image": "/produtos/AMD Ryzen 7 7800X3D.png",
+          "brand": "AMD",
+          "price": 2599.9,
+          "stock": 9,
+          "rating": 5,
+          "reviews": 94,
+          "badge": "Rei do FPS",
+          "description": "Referencia absoluta em jogos competitivos graças ao cache 3D V-Cache de 96MB.",
+          "specs": ["8C/16T", "AM5", "DDR5", "105W TDP", "3D V-Cache"]
+        }
+      ]
+    },
+    {
+      "id": "memorias",
+      "name": "Memorias RAM",
+      "icon": "ram",
+      "description": "Kits DDR4 e DDR5 com perfil XMP/EXPO",
+      "products": [
+        {
+          "id": "RAM-KF-16",
+          "name": "Kingston Fury Beast 16GB (2x8) DDR4 3200",
+          "image": "/produtos/Kingston Fury Beast 16GB (2x8) DDR4 3200.png",
+          "brand": "Kingston",
+          "price": 299.9,
+          "stock": 45,
+          "rating": 4.8,
+          "reviews": 401,
+          "badge": "Kit dual channel",
+          "description": "Kit 2x8GB com XMP pronto para ativar 3200 MHz em placas compativeis.",
+          "specs": ["16GB (2x8)", "DDR4-3200", "CL16", "1.35V", "Heat spreader baixo"]
+        },
+        {
+          "id": "RAM-COR-32",
+          "name": "Corsair Vengeance 32GB (2x16) DDR5 6000",
+          "image": "/produtos/Corsair Vengeance 32GB (2x16) DDR5 6000.webp",
+          "brand": "Corsair",
+          "price": 899.9,
+          "stock": 22,
+          "rating": 4.9,
+          "reviews": 67,
+          "description": "Memoria premium para AM5 e Intel 14a com EXPO/XMP 3.0 certificado.",
+          "specs": ["32GB (2x16)", "DDR5-6000", "CL30", "EXPO + XMP", "Aluminio preto"]
+        },
+        {
+          "id": "RAM-XPG-16",
+          "name": "XPG Lancer Blade 16GB DDR5 5200",
+          "image": "/produtos/XPG Lancer Blade 16GB DDR5 5200.png",
+          "brand": "XPG",
+          "price": 369.9,
+          "stock": 33,
+          "description": "Modulo unico DDR5 para upgrades graduais com excelente estabilidade.",
+          "specs": ["16GB single", "DDR5-5200", "CL38", "Sem RGB", "Lifetime warranty"]
+        }
+      ]
+    },
+    {
+      "id": "placas-video",
+      "name": "Placas de video",
+      "icon": "gpu",
+      "description": "GPUs NVIDIA RTX e AMD Radeon para cada resolucao",
+      "products": [
+        {
+          "id": "GPU-4060",
+          "name": "NVIDIA GeForce RTX 4060 8GB GDDR6",
+          "image": "/produtos/NVIDIA GeForce RTX 4060 8GB GDDR6.webp",
+          "brand": "NVIDIA",
+          "price": 2299.9,
+          "stock": 16,
+          "rating": 4.7,
+          "reviews": 203,
+          "badge": "1080p Ultra",
+          "description": "Placa eficiente com DLSS 3 e ray tracing para jogos modernos em Full HD.",
+          "specs": ["8GB GDDR6", "DLSS 3", "Ray Tracing", "PCIe 4.0", "TDP 115W"]
+        },
+        {
+          "id": "GPU-7700XT",
+          "name": "AMD Radeon RX 7700 XT 12GB",
+          "image": "/produtos/AMD Radeon RX 7700 XT 12GB.webp",
+          "brand": "AMD",
+          "price": 2999.9,
+          "stock": 10,
+          "rating": 4.8,
+          "reviews": 88,
+          "description": "12GB VRAM e FSR 3 para 1440p alto com folga em titulos AAA.",
+          "specs": ["12GB GDDR6", "FSR 3", "DisplayPort 2.1", "AV1 decode"]
+        },
+        {
+          "id": "GPU-4070S",
+          "name": "NVIDIA GeForce RTX 4070 Super 12GB",
+          "image": "/produtos/NVIDIA GeForce RTX 4070 Super 12GB.png",
+          "brand": "NVIDIA",
+          "price": 4499.9,
+          "stock": 7,
+          "rating": 4.9,
+          "reviews": 52,
+          "badge": "1440p/4K",
+          "description": "GPU intermediaria premium para criadores e gamers exigentes.",
+          "specs": ["12GB GDDR6X", "DLSS 3.5", "Encoder AV1", "220W TDP"]
+        }
+      ]
+    },
+    {
+      "id": "armazenamento",
+      "name": "SSDs e armazenamento",
+      "icon": "storage",
+      "description": "NVMe PCIe 4.0 e HDD para backup",
+      "products": [
+        {
+          "id": "SSD-NV2-1T",
+          "name": "Kingston NV2 1TB NVMe M.2 PCIe 4.0",
+          "image": "/produtos/Kingston NV2 1TB NVMe M.2 PCIe 4.0.webp",
+          "brand": "Kingston",
+          "price": 359.9,
+          "stock": 60,
+          "rating": 4.6,
+          "reviews": 520,
+          "badge": "Best seller",
+          "description": "SSD NVMe para sistema e jogos com excelente relacao GB/R$.",
+          "specs": ["1TB", "M.2 2280", "3500 MB/s leitura", "PCIe 4.0 x4", "Sem DRAM"]
+        },
+        {
+          "id": "SSD-990-2T",
+          "name": "Samsung 990 PRO 2TB NVMe",
+          "image": "/produtos/Samsung 990 PRO 2TB NVMe.jpeg",
+          "brand": "Samsung",
+          "price": 1149.9,
+          "stock": 18,
+          "rating": 4.9,
+          "reviews": 134,
+          "description": "Topo de linha para edicao 4K, VMs e cargas profissionais intensas.",
+          "specs": ["2TB", "7450 MB/s leitura", "6900 MB/s escrita", "Controlador Samsung Pascal"]
+        },
+        {
+          "id": "HDD-2T",
+          "name": "Seagate Barracuda 2TB 7200RPM SATA",
+          "image": "/produtos/Seagate Barracuda 2TB 7200RPM SATA.jpeg",
+          "brand": "Seagate",
+          "price": 419.9,
+          "stock": 25,
+          "description": "HD interno para arquivos, backups e biblioteca de midia.",
+          "specs": ["2TB", "SATA III 6Gb/s", "7200 RPM", "64MB cache", "3.5 polegadas"]
+        }
+      ]
+    },
+    {
+      "id": "fontes",
+      "name": "Fontes",
+      "icon": "psu",
+      "description": "Fontes 80 Plus Bronze a Titanium, ATX 3.0",
+      "products": [
+        {
+          "id": "PSU-CV550",
+          "name": "Corsair CV550 550W 80 Plus Bronze",
+          "image": "/produtos/Corsair CV550 550W 80 Plus Bronze.jpeg",
+          "brand": "Corsair",
+          "price": 319.9,
+          "stock": 34,
+          "rating": 4.5,
+          "reviews": 210,
+          "description": "Fonte confiavel para setups entry com GPU de ate 200W.",
+          "specs": ["550W", "80 Plus Bronze", "Nao modular", "OVP/UVP/SCP/OCP"]
+        },
+        {
+          "id": "PSU-BQ-750",
+          "name": "be quiet! Pure Power 12 M 750W Gold",
+          "image": "/produtos/be quiet! Pure Power 12 M 750W Gold.png",
+          "brand": "be quiet!",
+          "price": 679.9,
+          "stock": 15,
+          "rating": 4.9,
+          "reviews": 73,
+          "badge": "Silenciosa",
+          "description": "Modular, certificada Gold e preparada para placas ATX 3.0 com 12VHPWR.",
+          "specs": ["750W", "80 Plus Gold", "Totalmente modular", "Fan 120mm silencioso"]
+        }
+      ]
+    },
+    {
+      "id": "gabinetes",
+      "name": "Gabinetes",
+      "icon": "case",
+      "description": "Mid tower com airflow e vidro temperado",
+      "products": [
+        {
+          "id": "CASE-H5",
+          "name": "NZXT H5 Flow RGB",
+          "image": "/produtos/NZXT H5 Flow RGB.jpeg",
+          "brand": "NZXT",
+          "price": 749.9,
+          "stock": 9,
+          "rating": 4.8,
+          "reviews": 44,
+          "badge": "Airflow",
+          "description": "Chassis compacto com fluxo de ar otimizado e gerenciamento de cabos integrado.",
+          "specs": ["Mid Tower", "Radiador 280mm", "USB-C frontal", "Painel mesh"]
+        }
+      ]
+    },
+    {
+      "id": "perifericos",
+      "name": "Perifericos",
+      "icon": "peripheral",
+      "description": "Teclados, mouses e monitores gamer",
+      "products": [
+        {
+          "id": "PER-GPRO2",
+          "name": "Logitech G Pro X Superlight 2",
+          "image": "/produtos/Logitech G Pro X Superlight 2.png",
+          "brand": "Logitech",
+          "price": 949.9,
+          "stock": 20,
+          "rating": 4.9,
+          "reviews": 89,
+          "description": "Mouse sem fio de 63g com sensor HERO 2 para eSports e FPS competitivo.",
+          "specs": ["63g", "HERO 2 44K DPI", "LIGHTSPEED 2.4GHz", "95h bateria"]
+        },
+        {
+          "id": "PER-HX60",
+          "name": "HyperX Alloy Origins 60 Mechanical",
+          "image": "/produtos/HyperX Alloy Origins 60 Mechanical.webp",
+          "brand": "HyperX",
+          "price": 479.9,
+          "stock": 17,
+          "rating": 4.7,
+          "reviews": 62,
+          "description": "Teclado mecanico 60% com chassi de aluminio e switches lineares.",
+          "specs": ["Layout 60%", "Switch linear", "USB-C removivel", "RGB per-key"]
+        },
+        {
+          "id": "PER-G5-27",
+          "name": "Samsung Odyssey G5 27\" Curvo 165Hz",
+          "image": "/produtos/Samsung Odyssey G5 27 Curvo 165Hz.webp",
+          "brand": "Samsung",
+          "price": 1399.9,
+          "stock": 12,
+          "rating": 4.8,
+          "reviews": 97,
+          "badge": "Gamer",
+          "description": "Monitor QHD 165Hz curvo com FreeSync Premium para jogos fluidos.",
+          "specs": ["27\" 2560x1440", "165Hz", "1ms MPRT", "HDR10", "1000R curvatura"]
+        }
+      ]
+    },
+    {
+      "id": "ofertas",
+      "name": "Combos e ofertas",
+      "icon": "deal",
+      "description": "Kits montados pela equipe BitMobo",
+      "products": [
+        {
+          "id": "KIT-AM4",
+          "name": "Combo Upgrade AM4: Ryzen 5 5600 + B550M + 16GB DDR4",
+          "image": "/produtos/Combo Upgrade AM4 Ryzen 5 5600 + B550M + 16GB DDR4.png",
+          "brand": "BitMobo",
+          "price": 1699.9,
+          "oldPrice": 1929.7,
+          "stock": 8,
+          "rating": 4.9,
+          "reviews": 36,
+          "badge": "-12% combo",
+          "description": "Kit curado e testado para compatibilidade. Inclui manual de montagem BitMobo.",
+          "specs": ["CPU + Placa-mae + RAM", "BIOS atualizada", "Suporte tecnico 30 dias"]
+        }
+      ]
+    }
+  ]
+}

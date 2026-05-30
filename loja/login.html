@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b0f14">
+  <link rel="icon" type="image/png" href="/brand/bitmobo-mark.png">
+  <title>Entrar — BitMobo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="site-header"></div>
+  <main class="container page form-page">
+    <div class="form-card">
+      <h1>Entrar na sua conta</h1>
+      <p class="form-hint" style="margin-top:0">Acompanhe pedidos, listas de desejos e ofertas exclusivas.</p>
+      <form id="login-form">
+        <div class="field">
+          <label for="email">E-mail</label>
+          <input id="email" type="email" required placeholder="voce@email.com">
+        </div>
+        <div class="field">
+          <label for="password">Senha</label>
+          <input id="password" type="password" required placeholder="••••••••">
+        </div>
+        <button type="submit" class="btn btn--primary btn--block">Entrar</button>
+      </form>
+      <p id="login-feedback" class="alert alert--info" hidden style="margin-top:16px">
+        Area de login em desenvolvimento. Por enquanto, finalize compras como visitante ou use o assistente.
+      </p>
+      <p class="form-hint">Nao tem conta? <a href="/cadastro.html" style="color:var(--accent-dark);font-weight:700">Cadastre-se</a></p>
+    </div>
+  </main>
+  <div id="site-footer"></div>
+  <script type="module" src="/src/js/pages/login.js"></script>
+</body>
+</html>

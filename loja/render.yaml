@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: bitmobo-loja
+    runtime: node
+    plan: free
+    rootDir: loja
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_VERSION
+        value: "20"
+      - key: CHATBOT_URL
+        sync: false
+      - key: STORE_NAME
+        value: BitMobo
+      - key: STORE_TAGLINE
+        value: Hardware para desktops gamer, criadores e estacoes de trabalho

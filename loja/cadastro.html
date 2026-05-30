@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b0f14">
+  <link rel="icon" type="image/png" href="/brand/bitmobo-mark.png">
+  <title>Criar conta — BitMobo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="site-header"></div>
+  <main class="container page form-page">
+    <div class="form-card">
+      <h1>Criar conta BitMobo</h1>
+      <p class="form-hint" style="margin-top:0">Cadastro rapido para salvar builds e receber alertas de estoque.</p>
+      <form id="signup-form">
+        <div class="field">
+          <label for="name">Nome</label>
+          <input id="name" required placeholder="Seu nome">
+        </div>
+        <div class="field">
+          <label for="email">E-mail</label>
+          <input id="email" type="email" required>
+        </div>
+        <div class="field">
+          <label for="password">Senha</label>
+          <input id="password" type="password" required minlength="8">
+        </div>
+        <div class="field">
+          <label for="password2">Confirmar senha</label>
+          <input id="password2" type="password" required minlength="8">
+        </div>
+        <button type="submit" class="btn btn--primary btn--block">Criar conta</button>
+      </form>
+      <p id="signup-feedback" class="alert alert--info" hidden style="margin-top:16px">
+        Cadastro visual pronto para integracao com API de usuarios. Enquanto isso, use o checkout como visitante.
+      </p>
+      <p class="form-hint">Ja tem conta? <a href="/login.html" style="color:var(--accent-dark);font-weight:700">Entrar</a></p>
+    </div>
+  </main>
+  <div id="site-footer"></div>
+  <script type="module" src="/src/js/pages/cadastro.js"></script>
+</body>
+</html>
