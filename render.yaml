@@ -31,7 +31,7 @@ services:
     plan: free
     rootDir: loja
     buildCommand: npm install && npm run build
-    startCommand: npm start
+    startCommand: npm run render-start
     healthCheckPath: /api/health
     envVars:
       - key: NODE_VERSION
